@@ -1,8 +1,22 @@
-<h1>Chat App</h1>
-<% if current_user %>
-  <%= link_to "Start Chatting", rooms_path %>
-  <%= button_to "Logout", destroy_user_session_path, method: :delete %>
-<% else %>
-  <%= link_to "Login", new_user_session_path %>
-  <%= link_to "Sign Up", new_user_registration_path %>
-<% end %>
+<div class="container-fluid vh-100 d-flex justify-content-center align-items-center bg-dark text-light">
+  <div class="row">
+    <div class="col-md-12">
+      <div id="container" class="bg-dark text-light p-5">
+        <h2 class="mb-2">Chat App</h2>
+    <% if current_user %>
+      <div class="flex flex-col items-center space-y-4">
+        <p>Let's start chatting</p>
+        <%= link_to "Start Chatting", rooms_path, class: 'btn btn-primary'%>
+        <%= button_to "Logout", destroy_user_session_path, method: :delete, class: "btn btn-danger" %>
+      </div>
+    <% else %>
+        <p>Welcome to Chat App</p>
+        <p>Please Login or Sign Up</p>
+        <div class="flex flex-col items-center space-y-4">
+          <%= link_to "Login", new_user_session_path, class: 'btn btn-primary' %>
+          <%= link_to "Sign Up", new_user_registration_path, class: 'btn btn-primary' %>
+        </div>
+    <% end %>
+  </div>
+  </div>
+</div>

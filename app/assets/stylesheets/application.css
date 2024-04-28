@@ -36,6 +36,7 @@
   #room_container {
     height: 100vh;
     margin-right: 0px !important;
+    margin-left: 16px !important;
   }
   
   #side_panel {
@@ -44,8 +45,15 @@
     overflow-x: hidden;
     overflow-y: scroll;
     margin-bottom: 55px;
+    margin-left: 16px !important;
   }
   #chatroom_container {
+    height: 100vh;
+    margin-right: 0px !important;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  #container {
     height: 100vh;
     margin-right: 0px !important;
     overflow-x: hidden;
