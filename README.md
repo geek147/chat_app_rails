@@ -29,3 +29,5 @@ This Chat application is a simple chat application that allows users to send and
     - Fix Unit tests
 
 # Preview
+
+![](https://github.com/geek147/chat_app_rails/blob/main/preview.gif)
