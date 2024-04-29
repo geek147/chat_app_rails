@@ -1,24 +1,31 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This Chat application is a simple chat application that allows users to send and receive messages.
 
-Things you may want to cover:
+- Ruby version: 3.3.1
 
-* Ruby version
+- System dependencies
 
-* System dependencies
+  - Ruby on Rails 7.1.3
+  - Devise gem for user authentication
+  - Turbo gem for client-side rendering
+  - Bootstrap gem for styling
+  - Redis gem for caching
+  - Stimulus gem for client-side JavaScript
 
-* Configuration
+- Unit tests
+  Unit tests for model
 
-* Database creation
+- How to run
 
-* Database initialization
+  - Run redis server (make sure redis is installed)
+  - Run rails server
 
-* How to run the test suite
+- Deployment instructions
 
-* Services (job queues, cache servers, search engines, etc.)
+# Next Steps
 
-* Deployment instructions
+    - Use fronend framework like React or Angular
+    - Fix Unit tests
 
-* ...
+# Preview
