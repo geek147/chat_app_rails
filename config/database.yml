@@ -80,6 +80,9 @@ test:
 #
 production:
   <<: *default
-  database: chatapp_production
-  username: chatapp
-  password: <%= ENV["CHATAPP_DATABASE_PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"] %>
+  host: <%= ENV["PGHOST"] %>
+  database: <%= ENV["PGDATABASE"] %>
+  username: <%= ENV["PGUSER"] %>
+  password: <%= ENV["PGPASSWORD"] %>
+  port: <%= ENV["PGPORT"] %>
